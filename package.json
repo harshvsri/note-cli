@@ -1,0 +1,19 @@
+{
+  "name": "node-intro",
+  "version": "1.0.0",
+  "main": "script.js",
+  "type": "module",
+  "bin": {
+    "note": "./script.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
