@@ -7,6 +7,7 @@ import {
   findNote,
   newNote,
 } from "./notes.js";
+import { start } from "./server.js";
 
 yargs(hideBin(process.argv))
   .scriptName("note")
@@ -91,7 +92,10 @@ yargs(hideBin(process.argv))
         type: "number",
       });
     },
-    async (argv) => {}
+    async (argv) => {
+      const notes = await findAllNotes();
+      start(notes, argv.port);
+    }
   )
   .demandCommand(1)
   .parse();
