@@ -1,4 +1,18 @@
-# NodeJS
+# Note CLI Tool
+
+This is a simple CLI tool that performs various operations around note taking.
+For more info run `npm link` then `note --help`.
+
+## Note Script
+
+This is a simple script that takes a note as an argument and logs it to the console.
+
+### How does this work?
+
+1. The first line is a shebang (hashbang) that tells the operating system to run the script with Node.js.
+2. We need to have `bin` in `package.json` to make the script globally available.
+3. Link the script to the global npm folder with the command `npm link`.
+4. We can run the script from the command line with the command `note <your-note>`.
 
 ## NodeJS VS Browser
 
@@ -20,14 +34,3 @@
 
 - First element is node executable path, second is the path of the file being executed
   and rest are the arguments passed to the file
-
-## Note Script
-
-This is a simple script that takes a note as an argument and logs it to the console.
-
-### How does this work?
-
-1. The first line is a shebang (hashbang) that tells the operating system to run the script with Node.js.
-2. We need to have `bin` in `package.json` to make the script globally available.
-3. Link the script to the global npm folder with the command `npm link`.
-4. We can run the script from the command line with the command `note <your-note>`.
